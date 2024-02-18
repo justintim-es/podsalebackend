@@ -8,6 +8,10 @@ app.use(function(req, res, next) {
 });
 const private = require('./routs/private');
 const contract = require('./routs/contract');
+const custodian = require('./routs/custodian');
+const utils = require('./routs/utils');
 app.use('/private', private);
 app.use('/contract', contract);
+app.use('/custodian', custodian);
+app.use('/utils', utils);
 app.listen(3000, () => console.log('kasmdkasmd'))
